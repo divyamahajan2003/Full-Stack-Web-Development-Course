@@ -1,0 +1,89 @@
+.container {
+ width: 600px;
+ height: 300px;
+ background-color: #000000;
+ display: grid;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+ grid-template-columns: repeat(3,1fr);
+ /* row-gap: 10px;
+ column-gap: 30px; */
+ grid-gap: 30px;
+ justify-items: center;
+ align-items: center;
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.one {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/span 2;
+}
+
+.two {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1/ span 3;
+}
+
+
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: colorAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal ; */
+    animation: widthAnimate 4s ease-in 0s infinite normal;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px
+    }
+}
+
+@keyframes colorAnimate {
+    /* from{
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    } */
+
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes widthAnimate {
+from{
+    width: 10px;
+}
+to {
+    width: 400px;
+}
+}

@@ -1,0 +1,114 @@
+h3 {
+    background-color: antiquewhite !important;
+}
+
+* {
+    font-family: "Courier New";
+    background-color: whitesmoke;
+}
+
+h3 {
+    color: purple;
+}
+
+h1 {
+    color: #b92b27;
+}
+
+#login {
+ background-color: white;   
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+
+/* descendant selector */
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: rgb(20, 121, 147);
+}
+
+/* Ajacent sibling Combinator */
+
+p + h3 {
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+}
+
+/* Child Combinator */
+div > input {
+    background-color: darksalmon;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    color: green;
+    background-color: ghostwhite;
+}
+
+input[type="password"] {
+    color: red;
+    background-color: ghostwhite;
+}
+
+/* Pseudo Class */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2) {
+    background-color:blanchedalmond;
+}
+
+/* Pseudo Element */
+
+h1::first-letter {
+ color: black;   
+}
+
+p::first-line {
+    color: red;
+}
+
+p::selection {
+    background-color: rgb(189, 189, 22);
+}
+
+/* Cascading Stylesheet */
+
+h3 {
+    background-color: yellow;
+}
+h3 {
+    background-color: rgb(187, 187, 231);
+}
